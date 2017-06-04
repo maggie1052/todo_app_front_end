@@ -4,23 +4,13 @@
         <title>Pikachu</title>
     </head>
     <style>
-        body{
-            background-image: url("http://orig09.deviantart.net/5d93/f/2011/345/1/b/pokeball_vector_by_mangotangofox-d4ivdg0.png");
-            background-size: 1350px 1350px;
-            background-origin: initial;
-            background-position: center;
-        }
-        h1{
-            color:#F9FF9E;
-        }
-        
         h2{
             color:#5D4BFF;
         }
         ul,li{
             color:#A0FC91;
         }
-        #Calendar{
+        #calendar{
             color:#0900FF;
         }
         table,th,td{
@@ -28,21 +18,37 @@
             border:2px solid black;
             border-collapse:collapse;
         }
-       @keyframes hi {
-    from {color: #F9FF9E;}
-    to {color: #5D4BFF;}
-    
-    
-        
+         @keyframes getbigger {
+              from {
+                  width: 50px;}
+               to{
+                  width: 300px;}
+            }
+            #pika{
+                animation-name: getbigger;
+                animation-duration: 5s;
+                animation-iteration-count: 1;
+               }
+         @keyframes changecolor{
+             from {
+                 background-color:#FFFFFF;}
+             to {
+                 background-color:#E2EAFF;}
+         } 
+         #bod{
+             animation-name: changecolor;
+             animation-duration: 5s;
+             animation-iteration-count: infinite;
+         }
     </style>
     
     
-<body>
-    <center>
-<h1>Pikachu is cute</h1>
+<body id="bod">
+<center>
+    <h1 id="heading">Pikachu is cute</h1>
     <p>I am bored.</p>
-<h2>I am even more bored.</h2>
-    <img src="http://images6.fanpop.com/image/photos/33000000/pikachu-pikachu-33005706-895-1000.png" width="300">
+    <h2>I am even more bored.</h2>
+    <img id="pika" src="http://images6.fanpop.com/image/photos/33000000/pikachu-pikachu-33005706-895-1000.png" width="300">
     <br>
     <a href ="http://www.pokemon.com/us/">Pokemon are cute</a>
     
@@ -57,7 +63,7 @@
         <li>Pika pika</li>
         <li>Add to do</li>
     </ol>
-  <p id="Calendar">June 2017</p>
+  <p id="calendar">June 2017</p>
     <table>
 
         <tr>
@@ -116,5 +122,29 @@
         </tr>
     </table>
     <h1>What am I doing?</h1>
-    </center>
+    
+     <textarea name="Text1" cols="35" rows="6" placeholder= "Answer"></textarea>
+    
+   <br>
+    <input type="number">
+   <br>
+    <input type="checkbox"> AP World History
+        <br>
+    <input type="checkbox"> Chemistry
+        <br>
+    <input type="checkbox"> Algebra 2
+        <br>
+    <input type="checkbox"> English 2B Honors
+        <br>
+    <input type="checkbox"> Racket Sports
+        <br>
+    <input type="checkbox"> AP Chinese
+        <br>
+    <input type="checkbox"> Geometry 
+        <br>
+    
+    <input type="submit" value="Hi">
+    
+    
+</center>
 </body>
