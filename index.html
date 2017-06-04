@@ -7,14 +7,20 @@
     <style>
         h1{
             color:#5D4BFF;
+            display:block;
+            border:inset;
+            background-color:#B0FFED;
         }
         ul,li{
             color:#C300FF;
         }
-        #calendar{
+        .calendar{
             color:#0900FF;
         }
-        table,th,td{
+        th{
+            color:#2986FF;
+        }
+        table,td{
             color:#FF4B4B;
             border:2px solid black;
             border-collapse:collapse;
@@ -28,42 +34,40 @@
             #pika{
                 animation-name: getbigger;
                 animation-duration: 5s;
-                animation-iteration-count: 1;
+                animation-iteration-count: 0;
                }
          @keyframes changecolor{
-             from {
+             0% {
                  background-color:#F9E2FF;}
-             to {
+             25% {
                  background-color:#E2EAFF;}
+             50% {
+                 background-color:#C6FFE1;}
+             75% {
+                 background-color:#FFC6C6;}
+             100% {
+                 background-color:#FFFCC6;}
          } 
          #bod{
              animation-name: changecolor;
-             animation-duration: 5s;
+             animation-duration: 10s;
              animation-iteration-count: infinite;
          }
+         
     </style>
     
     
 <body id="bod">
 <center>
-    <h1>To-Do List</h1>
+    <h1>Calenders</h1>
     <p>STOP PROCRASTINATING!</p>
     
-    <img id="pika" src="http://images6.fanpop.com/image/photos/33000000/pikachu-pikachu-33005706-895-1000.png" width="300">
+    <img id="pika" src="http://quotespakora.com/wp-content/uploads/2014/04/Dont-give-up.jpg" width="250">
     <br>
     
-    <p><strong>Homework Assignments</strong></p>
-    <ol>
-        <li>AP World:</li> 
-        <li>Chemistry:</li>
-        <li>Algebra 2:</li>
-        <li>English 2B Honors:</li>
-        <li>Racket Sports</li>
-        <li>AP Chinese:</li>
-        <li>Geometry:</li>
-    </ol>
-  <p id="calendar">June 2017</p>
-    <table>
+  <p class="calendar">June 2017</p>
+     
+       <table>
 
         <tr>
             <th>Sun</th>
@@ -120,29 +124,116 @@
             <td></td>
         </tr>
     </table>
-    <h1>What am I doing?</h1>
+     
+     <p class="calendar">July 2017</p>
+    <table>
+        
+        <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+             <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+             <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+        </tr>
+        <tr>
+             <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
     
-     <textarea name="Text1" cols="35" rows="6" placeholder= "Answer"></textarea>
+    <h1>Schedule</h1>
     
+      <p><strong>Homework Assignments</strong></p>
+    <ol>
+        <li>AP World:</li> <textarea name="Text1" cols="50" rows="2" placeholder= "input assignments"></textarea>
+        <li>Chemistry:</li> <textarea name="Text1" cols="50" rows="2" placeholder= "input assignments"></textarea>
+        <li>Algebra 2:</li> <textarea name="Text1" cols="50" rows="2" placeholder= "input assignments"></textarea>
+        <li>English 2B Honors:</li> <textarea name="Text1" cols="50" rows="2" placeholder= "input assignments"></textarea>
+        <li>Racket Sports:</li> <textarea name="Text1" cols="50" rows="2" placeholder= "input assignments"></textarea>
+        <li>AP Chinese:</li> <textarea name="Text1" cols="50" rows="2" placeholder= "input assignments"></textarea>
+        <li>Geometry:</li> <textarea name="Text1" cols="50" rows="2" placeholder= "input assignments"></textarea>
+    </ol>
+    <form action="show.html">
+        <input type="submit" value="Go!"/>
+    </form>
    <br>
-    <input type="number">
-   <br>
-    <input type="checkbox"> AP World History
+    <input type="checkbox"> <span class="checklist">AP World History</span>
+    <input type="text" placeholder="input hours">
         <br>
-    <input type="checkbox"> Chemistry
+    <input type="checkbox"> <span class="checklist">Chemistry</span>
+    <input type="text" placeholder="input hours">
         <br>
-    <input type="checkbox"> Algebra 2
+    <input type="checkbox"> <span class="checklist">Algebra 2</span>
+    <input type="text" placeholder="input hours">
         <br>
-    <input type="checkbox"> English 2B Honors
+    <input type="checkbox"> <span class="checklist">English 2B Honors</span>
+    <input type="text" placeholder="input hours">
         <br>
-    <input type="checkbox"> Racket Sports
+    <input type="checkbox"> <span class="checklist">Racket Sports</span>
+    <input type="text" placeholder="input hours">
         <br>
-    <input type="checkbox"> AP Chinese
+    <input type="checkbox"> <span class="checklist">AP Chinese</span>
+    <input type="text" placeholder="input hours">
         <br>
-    <input type="checkbox"> Geometry 
+    <input type="checkbox"> <span class="checklist">Geometry</span>
+    <input type="text" placeholder="input hours">
         <br>
-    
-    <input type="submit" value="Hi">
+    <form action="page.html">
+        <input type="submit" value="Sumbit!"/>
+    </form>
     
     
 </center>
